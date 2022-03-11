@@ -4,12 +4,12 @@ const likedPostsId = [];
 const reportedPostsId = [];
 
 const getLikedPosts = () => {
-  //document.getElementById('liked').textContent = "";
+  document.getElementById('liked').textContent = "";
   return posts.filter((post) => likedPostsId.includes(post.id));
 };
 
 const getReportedPosts = () => {
-  //document.getElementById('reported').textContent = "";
+  document.getElementById('reported').textContent = "";
   return posts.filter((post) => reportedPostsId.includes(post.id));
 };
 
@@ -112,7 +112,7 @@ const createPost = (post) => {
                 <div class="post__infos">
                   <div class="post__likes">
                     <a href="#" class="post__likes-avatar">
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="User Picture" />
+                      <img src="${userImage}" alt="User Picture" />
                     </a>
 
                     <span>Liked by
